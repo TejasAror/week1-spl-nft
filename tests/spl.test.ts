@@ -6,11 +6,7 @@ import { transferSpl } from '../src/spl/transfer.js';
 import { getAccount, getMint } from '@solana/spl-token';
 import { PublicKey } from '@solana/web3.js';
 
-/**
- * These are LIVE Solana Devnet integration tests. They submit real transactions
- * and therefore require the locally configured keypair to hold SOL for fees.
- * Run with: npm run test:integration
- */
+
 describe('SPL Token (Devnet integration)', () => {
   const connection = createConnection();
   const payer = loadKeypair();
