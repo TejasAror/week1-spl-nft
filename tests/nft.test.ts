@@ -6,11 +6,7 @@ import { updateCoreNft } from '../src/nft/update.js';
 import { fetchAsset } from '@metaplex-foundation/mpl-core';
 import { publicKey } from '@metaplex-foundation/umi';
 
-/**
- * These are LIVE Solana Devnet integration tests. They submit real transactions
- * and therefore require the locally configured keypair to hold SOL for fees.
- * Run with: npm run test:integration
- */
+
 describe('MPL Core NFT (Devnet integration)', () => {
   const payer = loadKeypair();
 
