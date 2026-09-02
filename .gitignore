@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# / Keypair files. NEVER commit a private key to the repository.
+*keypair*.json
+*secret*.json
+id.json
+phantom-keypair.json
+*.key
+*.pem
+
+# Local runtime state / generated outputs (gitignored so instructors see a clean repo)
+outputs/
+.solana/
+*.rpc-logs
+
+# Test / coverage
+coverage/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
