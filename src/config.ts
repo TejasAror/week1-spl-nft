@@ -3,14 +3,7 @@ import { homedir } from 'node:os';
 import { join } from 'node:path';
 import { Connection, Keypair, PublicKey, clusterApiUrl } from '@solana/web3.js';
 
-/**
- * The public wallet the assignment is documented against.
- * Because we never hardcode a private key, the keypair used to actually sign
- * transactions is loaded from the local Solana CLI config (or SOLANA_KEYPAIR_PATH).
- * If that keypair does not match this expected wallet, a warning is printed so it
- * is obvious during review, but execution is not blocked (the instructor can run
- * the same code from a machine that has the matching keypair).
- */
+
 export const EXPECTED_WALLET = 'HNDAhSqXTA6woJLRRQpaMsWX171XVsjgxBXRxz95xfSB';
 
 export const NETWORK = 'devnet';
